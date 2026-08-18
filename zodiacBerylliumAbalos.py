@@ -1,12 +1,15 @@
+# INITIALIZATION
 userYear = 0
 userYear = int(input("Enter your birth year: "))
 zodiac = ""
 
-
+# INPUT VALIDATION
 if  userYear < 1900:
     print("Invalid Year, it should not be earlier than 1900.")
 elif userYear > 2026:
     print("Invalid Year, it should not be later than 2026.")
+
+# DETERMINING ZODIAC SIGN
 else:
     if userYear % 12 == 0:
         zodiac = "Monkey (猴 / Hóu)"
@@ -33,6 +36,7 @@ else:
     elif userYear % 12 == 11:
         zodiac = "Goat (羊 / Yáng)"
 
+    # OUTPUT
     print()
     print(f"Your Chinese Zodiac Sign is: {zodiac}")
-    print()
+    print() 
